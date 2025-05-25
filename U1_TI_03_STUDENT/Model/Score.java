@@ -3,7 +3,7 @@ package Model;
 public class Score {
 
     private String name;
-    private String id;
+    private String matricula;
     private double note1;
     private double note2;
     private double note3;
@@ -39,11 +39,11 @@ public String getName () {
 
 //THIS IS FOR THE STRING "ID" 
 
-public void setId (String id) {
-    this.id = id;
+public void setMatricula (String matricula) {
+    this.matricula = matricula;
 }
-public String getId () {
-    return  this.id;
+public String getMatricula () {
+    return  this.matricula;
 }
 
 //THIS IS FOR THE NOTE NUMBER 1 

@@ -1,20 +1,20 @@
 
 
-import Model.Score;
+import Model.Student;
 
-public class Student {
+public class Score {
     public static void main (String[] args) throws Exception {
 
     //--------------------------------------------------------------
 
-    Score[]students = new Score [5];
+    Student[]students = new Student [5];
 
 
 
 //SUDENT ALAN 
      
 
-      students[0] = new Score();
+      students[0] = new Student();
       students[0].setName("Alan");
       students[0].setMatricula("20243ds078");
       students[0].setNote1(100);
@@ -26,7 +26,7 @@ public class Student {
 
 
 //STUDENT DANIELA
-     students[1] = new Score();
+     students[1] = new Student();
      students[1].setName("Daniela");
      students[1].setMatricula("20243ds079");
      students[1].setNote1(70);
@@ -38,7 +38,7 @@ public class Student {
 
 
 //STUDENT CARLOS
-     students[2] = new Score ();
+     students[2] = new Student ();
      students[2].setName("Carlos");
      students[2].setMatricula("20243ds080");
      students[2].setNote1(100);
@@ -51,7 +51,7 @@ public class Student {
 
 
 //STUDENT MIGUEL
-     students[3] =new Score();
+     students[3] =new Student();
      students[3].setName("Miguel");
      students[3].setMatricula("20243ds081");
      students[3].setNote1(80);
@@ -63,7 +63,7 @@ public class Student {
 
 
 //STUDENT FRNACO
-     students[4] = new Score();
+     students[4] = new Student();
      students[4].setName("Franco");
      students[4].setMatricula("20243ds082");
      students[4].setNote1(60);
@@ -79,7 +79,7 @@ public class Student {
 //--------------------------------------------------------------
 
 
-for (Score sc : students) {
+for (Student sc : students) {
 
    System.out.println("---------------------------------------");
     System.out.println("Avarage: " + sc.getAverage());

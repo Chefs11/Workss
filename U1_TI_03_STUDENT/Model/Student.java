@@ -1,6 +1,6 @@
 package Model;
 
-public class Score {
+public class Student {
 
     private String name;
     private String matricula;

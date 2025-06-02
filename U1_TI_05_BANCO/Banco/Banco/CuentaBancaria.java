@@ -27,24 +27,24 @@ public class CuentaBancaria {
     //--------------------------------
 
 
-    public void depositar (double monto) {
-        if (monto > 0) {
-            saldo = saldo + monto;
-        } else {
-            System.out.println("El saldo es menor a 0");
-        }
+                    public void depositar (double monto) {
+                        if (monto > 0) {
+                            saldo = saldo + monto;
+                        } else {
+                            System.out.println("El saldo es menor a 0");
+                        }
 
-    }
-    public boolean retirar (double monto) {
-        if (monto > 0 && saldo >= monto) {
-            saldo = saldo - monto;
-            return true;
-        }  else {
-            System.out.println("No puedes retirar esa cantidad");
-            return false;
-        }
-        
-    }
+                    }
+                    public boolean retirar (double monto) {
+                        if (monto > 0 && saldo >= monto) {
+                            saldo = saldo - monto;
+                            return true;
+                        }  else {
+                            System.out.println("No puedes retirar esa cantidad");
+                            return false;
+                        }
+                        
+                    }
 
 
 

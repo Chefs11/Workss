@@ -1,18 +1,13 @@
-package Password;
+                    package Password;
 public class UsuarioSeguro {
-
     private String nombreUsuario;
     private String password;
-    
-    
-    
-    
-    
+
 //-----------------------------------------------
         public void setNombreUsuario(String nombreUsuario) {
-        if (nombreUsuario != null && !nombreUsuario.isEmpty())  {
-             this.nombreUsuario = nombreUsuario;
-            System.out.println("Usuario: " + nombreUsuario);
+                    if (nombreUsuario != null && !nombreUsuario.isEmpty())  {
+                  this.nombreUsuario = nombreUsuario;
+                     System.out.println("Usuario: " + nombreUsuario);
  
         } else{
 System.out.println("El nombre es invalido");
@@ -22,9 +17,9 @@ System.out.println("El nombre es invalido");
 
     //------------------------------------------------
     public void setPassword(String password) {
-        boolean esMinuscula = false;
-        boolean esMayuscula = false;
-        boolean esDigito = false;
+                 boolean esMinuscula = false;
+                 boolean esMayuscula = false;
+                 boolean esDigito = false;
 
         if (password.length() < 8) {
         
@@ -60,22 +55,12 @@ System.out.println("El nombre es invalido");
             }
             if (!esDigito) {
                 System.out.println("La contraseña debe tener al menos un número");
-            }
-            
-            }
-
-            
-
-        }
+            }  }  }
                     public boolean autenticar(String intentPassword) {
                 if (this.password == null) {
                     System.out.println("No hay contraseña guardada.");
                     return false;
                 }
                 return this.password.equals(intentPassword);
-               }
-      
-    //-------------------------------------------------
-
-}
+               }}
 
